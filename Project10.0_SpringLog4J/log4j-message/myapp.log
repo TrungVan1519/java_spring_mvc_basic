@@ -1,0 +1,6 @@
+2020-05-24 15:55:36 INFO  NormalController:18 - >> Input text: dau xanh
+2020-05-24 15:56:07 INFO  NormalController:18 - >> Input text: rau muong
+2020-05-24 16:00:55 INFO  ExceptionHandlerController:21 - >> class java.lang.NoClassDefFoundError
+2020-05-24 16:02:17 INFO  NormalController:18 - >> Input text: exception blah blah
+2020-05-24 16:02:17 INFO  ExceptionHandlerController:50 - >> class java.lang.NoClassDefFoundError
+2020-05-24 16:02:24 INFO  NormalController:18 - >> Input text: dau xanh

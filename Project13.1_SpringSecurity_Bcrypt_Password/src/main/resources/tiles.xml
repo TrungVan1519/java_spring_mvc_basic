@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+   <!-- Base View -->
+   <definition name="base.definition" 
+       template="/WEB-INF/base-view/base-view.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/base-view/header-view.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/base-view/menu-view.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/base-view/footer-view.jsp" />  
+   </definition>  
+ 
+   <!-- Product View -->
+   <definition name="homeView.definition" extends="base.definition">  
+       <put-attribute name="title" value="Home Page" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/home-view.jsp" />  
+   </definition>  
+      
+   <definition name="contactusView.definition" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/contact-view.jsp" />  
+   </definition>  
+   
+   <definition name="listView.definition" extends="base.definition">  
+       <put-attribute name="title" value="Product List" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/list-view.jsp" />  
+   </definition>  
+   
+   <definition name="singleView.definition" extends="base.definition">  
+       <put-attribute name="title" value="Product's info" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/single-view.jsp" />  
+   </definition>  
+      
+   <definition name="addingFormView.definition" extends="base.definition">  
+       <put-attribute name="title" value="Adding new product" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/adding-form-view.jsp" />  
+   </definition>  
+      
+   <definition name="updatingFormView.definition" extends="base.definition">  
+       <put-attribute name="title" value="Updating existing product" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/updating-form-view.jsp" />  
+   </definition>  
+   
+   <!-- Shopping Cart View -->
+   <definition name="shoppingCart.definition" extends="base.definition">  
+       <put-attribute name="title" value="Shopping Cart" />  
+       <put-attribute name="body" value="/WEB-INF/custom-view/shopping-cart-view.jsp" />  
+   </definition>  
+   
+</tiles-definitions>
